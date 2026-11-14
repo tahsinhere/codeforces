@@ -31,10 +31,21 @@ cin >> a[i];
 // be [1 ,3, 7] thus max is 7 and s would update to be 11. 
 
 long long s = 0;
+// so first number i can add s or subtract as it won't matter 
+// so, go in a loop for each digit, and iether add or subtract then update s. 
+
+
+
+for (int i=0; i<n; i++){
+
+     a[i] = a[i] + s; 
+
+     s += a[i];   
 
 
 
 
+    }
 
 
 

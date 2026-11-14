@@ -45,6 +45,12 @@ long long s = 0;
 // s would be -9+-13 so -22, then 2--22 = 24 which 24> 4. From before. so one desicion led to it be 20 higher. 
 // so maybe the trick is to maximize s.  
 
+// what is negative and positive [1 , -3, 3] s=0 well,
+// -3 - 1 = -4 and s = -3 . [1, -4, 3] -> 3--3 = 6 . or -3+1= -2, [3, -2, 3] s=1 . 3+1= 4. 
+
+// so, no matter what if last number is positive then number can increased no matter if s is + or -. 
+// if last number is negative then -3 + 1 = -2. in othercase -3--3 = 0 . 
+
 for (int i=0; i<n; i++){
 
      a[i] = a[i] + s; 

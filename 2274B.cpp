@@ -32,9 +32,18 @@ cin >> a[i];
 
 long long s = 0;
 // so first number i can add s or subtract as it won't matter 
-// so, go in a loop for each digit, and iether add or subtract then update s. 
+// so, go in a loop for each digit, and either add or subtract then update s. 
 
 
+// so this only adds as of now, the way to find max digit is to just use the max function on the array. 
+
+// given any array with any digits how do i maximize the the updated array on the last digit which i can return
+
+// so [3 , -5, 1, -4 ,2 ] i can do -5-3 get -8, then 1--5 = 6 then UA would be 3, -8, 6 = 1, -4 + 1= -3 , then 2--2 =4. 
+// so trying to maximize the digits doesn't always work, as max in the last one is 6.
+// however, if i did -5-3 =- 8, then i did 1+-5 i would have -4 < 6 thought this allows s to be -9. add taht to -4 i get -13. 
+// s would be -9+-13 so -22, then 2--22 = 24 which 24> 4. From before. so one desicion led to it be 20 higher. 
+// so maybe the trick is to maximize s.  
 
 for (int i=0; i<n; i++){
 

@@ -19,13 +19,11 @@ cin >> y;
 
 y = R + y; 
 
-cout << x << y << "\n"; 
+cout << x << " " << y << "\n"; 
 
+} 
 return 0; 
 
-
-
-}
 
 
 

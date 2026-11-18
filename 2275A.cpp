@@ -12,8 +12,6 @@ while(t--){
 int R;
 int x;
 int y;
-int a;
-int b; 
 
 cin >> R; 
 cin >> x;

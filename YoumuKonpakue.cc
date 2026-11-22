@@ -34,6 +34,16 @@ void solve() {
 // to >= x 
 // so add a charge, then check if attack + attack - i , is >= x. however this would go until it is . So, then put
 // them all in a dynamic array, and output the min. 
+
+// x is the max health
+// so should be equal or greater 
+// a >= x 
+// then c is charge which increents a , in each move its either x-a & a-1  or a+1 , so both results in moves++
+// first my old method was go in a loop x amount and add 1 to a and moves++ then check if a is larger than but thats flawed.
+// instead i can go into another loop that adds a + a-1 until a =0 then check if its equal to or greater than x
+// if yes put it in an dynamic array, then return min of that array which should work. 
+
+
 int x; 
 int a = 1; //attack
 cin >> x; 
@@ -50,7 +60,7 @@ int moves  =  0;
 
 for (int i = 1; i<x; i++ ){
 
-for (int r = a-1; i<r; i++){
+for (int r = a-1; i<r; r++){
     if (a + (r) >= x){
         cout << moves + 2 << "\n";  
         return;
